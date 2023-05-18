@@ -34,7 +34,7 @@ header img{
   width:60px;
   height: 60px;
   border-radius: 50%;
-  display: flex;
+  
 }
 header h1{
     color:red;
@@ -411,13 +411,13 @@ nav ul a:hover{
   
  
   .aboutimg{
-    position:relative;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url('images/background2.jpg');
    
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url('images/background2.jpg');
    height:460px;
    display: flex;
    justify-content: center;
   align-items: center;
+
   }
   .aboutimg h2{
     color:lightblue;
@@ -1153,15 +1153,40 @@ margin-left: 50px;
 
 
   @media (max-width: 768px){
+    
+    
     header img{
-      width:60px;
-      height: 60px;
+      width:70px;
+      height: 70px;
       border-radius: 50%;
+      display: flex;
+    }
+    header h1{
       display: none;
     }
-    
+    header{
+      background-color: whitesmoke;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      position: fixed;
+      
+      top: 0;
+        left: 0;
+       
+       z-index: 999;
+       padding-bottom:0px;
+      width:100%;
+      box-shadow:0 0 10px black;
+  
+    }
+    .Contact .aboutimg h2{
+      margin-left: 90px;
+    }
 main{
   max-width: 768px;
+  overflow: hidden;
 }
     
     .bgimage {
@@ -1236,10 +1261,10 @@ nav ul{
    margin-right:0px;
 }
 nav ul a{
-margin: px;
+margin: 10px;
 color:#2555A6;
 text-decoration: none;
-font-size: 12px;
+font-size: 15px;
 }
 .signup{
   padding: 4px 11px;
@@ -1469,7 +1494,7 @@ font-size: 12px;
          width: 800px;
       }
       .contactcontain{
-        width:500px;
+        width:450px;
         height:550px;
         background: whitesmoke;
         margin-top: 50px;
@@ -1549,10 +1574,10 @@ font-size: 12px;
        
       }
       .icon{
-        width:40px;
-        height:40px;
-        padding:10px;
-        font-size: 20px;
+        width:30px;
+        height:30px;
+        padding:7px;
+        font-size: 15px;
         background: red;
         color:white;
         border-radius: 30px;
@@ -1565,14 +1590,14 @@ font-size: 12px;
       .address h3{
         margin-left: 10px;
         color:white;
-        font-size: 18px;
-        text-shadow: 0 0 2px white;
+        font-size: 13px;
+       text-shadow: none;
       }
       .address p{
         margin-left: 10px;
         color:lightblue;
         text-shadow: 0 0 2px blue;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 400;
        
       }
@@ -1580,7 +1605,7 @@ font-size: 12px;
       .address p span{
         margin-left: 0;
         color:white;
-        font-size: 12px;
+        font-size: 9.5px;
         text-shadow: 0 0 2px white;
       }
       .contact-details .address{
@@ -1734,6 +1759,17 @@ font-size: 12px;
 
   }
  @media( max-width: 426px){
+  html,body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+   
+  }
+  .aboutimg{
+    width:426px;
+  }
   .bgimage {
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url(images/background\ image.jpg);
     background-size: cover;
@@ -1742,36 +1778,66 @@ font-size: 12px;
     padding: 20px;
     width: 426px;
 }
+
 main{
   width: 426px;
+  overflow: hidden;
 }
 .footer{
   width: 426px;
+  align-items: center;
+}
+.footer-contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .footer-row{
   display:grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
-  flex-wrap:wrap;
- 
+  grid-template-columns: repeat(1,minmax(0,1fr));
+  
+  align-items: center;
+  text-align: center;
   }
     .footer-col{
     width:20%;
     padding:0 15px;
     margin:20px;
+    justify-content: center;
+    align-items: center;
     }
-.social-links a{
+.social-links {
     display:flex;
   }
-  
-  
+  .social-links a{
+    font-size: 15px;
+    border-radius: 50%;
+    width:20px;
+    height:20px;
+  }
+  .footer-para p{
+    font-size: 20px;
+
+  }
+  .footer-para h3{
+    font-size: 15px;
+  }
   .loginimage{
-    
+   background: none;
+    padding:30px;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
     width:426px;
         }
+  
+  
+  
         .logincontain{
           
          
-          margin: auto;
+          
             width:330px;
             height:250px;
             background: whitesmoke;
@@ -1832,7 +1898,7 @@ main{
         background: ghostwhite;
        }
        .signup-contain{
-        margin-top:100px;
+        margin-top:10px;
         width:400px;
         height:500px;
         background: white;
@@ -1976,12 +2042,12 @@ main{
       width: 400px;
       height: 300px;
       border-radius: 10px;
-      margin-left: 0px;
+      margin-left: 5px;
     }
     
      .cont {
        margin-top:10px;
-       margin-right: 100px;
+       margin-right: 10px;
        margin-left: 5px;
        background: ghostwhite;
        width:400px;
@@ -1998,12 +2064,13 @@ main{
     }
      .cont p{
       margin-top: 20px;
-      font-size: 22px;
-      margin-left: 5px;
+      font-size: 20px;
+      margin-left: 3px;
+      margin-right: 40px;
     }
     .cont p span{
       color:red;
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 600;
     }
     .cont a{
@@ -2248,9 +2315,7 @@ main{
          color: white;
          border-radius: 9px;
      }
-     main{
-      max-width: 426px;
-     }
+     
    
 
      header{
@@ -2271,7 +2336,649 @@ main{
       width:426px;
   }
 
- }
+  .register-image{
+    background:none;
+      height:100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding:30px;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+  .register-contain{
+    width:400px;
+    height:600px;
+    background: whitesmoke;
+    margin-top: 100px;
+    border-radius: 7px;
+  }
+  .register-heading{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .register-heading h2{
+    font-size:26px;
+    margin-top: 30px;
+    text-shadow: 0 0 5px black;
+  }
+  .register-details{
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .register-details form{
+    
+    display: grid;
+   }
+   .register-details form input{
+    padding:5px 10px;
+    font-size: 15px;
+    width:300px;
+  
+   }
+   .register-details form label{
+    font-size:16px;
+    font-weight: 500;
+   }
+   .register-details form select{
+    padding:5px 10px;
+    width:300px;
+   }
+   .register-details form button{
+    width:300px;
+    margin-top: 5px;
+    padding:7px 12px;
+    border:none;
+    background: red;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+   }
+   .register-details form button:hover{
+    background-color: #2555A6;
+    color:white;
+   }
+   .register-details form p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 13px;
+   }
+   .register-details form p a{
+  text-decoration: none;
+   }
+   .register-details form p a:hover{
+    font-size: 15px;
+    color:blue;
+   }
+   .aboutimg{
+    justify-content: flex-start;
+    height:200px;
+  }
+  .aboutimg h2{
+    font-size: 35px;
+    margin-left: 110px;
+  }
+  .Details img{
+    width:300px;
+    height:300px;
+  }
+  .Details h1{
+    font-size: 22px;
+  }
+  .Details h2{
+    font-size: 22px;
+  }
+  .Details h2 span{
+    font-size: 22px;
+  }
+  .Details p{
+    font-size: 22px;
+  }
+  .contactform{
+    background: none;
+  }
+  .contactcontain{
+    background: none;
+    width: 320px;
+    height: 600px;
+    margin-left: 50px;
+  }
+  .contactheading h2{
+    font-size: 25px;
+  }
+  .inputbox form label{
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .inputbox form input{
+    font-size: 15px;
+    padding: 4px 8px;
+    width: 270px;
+    margin-left: 15px;
+  }
+  .inputbox form textarea{
+    font-size: 15px;
+    padding: 4px 8px;
+    width: 270px;
+    margin-left: 15px;
+  }
+  .inputbox form button{
+    font-size: 15px;
+    padding: 4px 8px;
+    width: 270px;
+    margin-left: 15px;
+  }
+  .contact-details{
+    display: none;
+  }
+  
+}
+@media( max-width: 376px){
+  .Contact .aboutimg h2{
+    margin-left: 70px;
+  }
+  .image img {
+    margin-top: 20px;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.box{
+  width:40%;
+}
+nav ul a{
+  margin:2px;
+}
+.services h2{
+font-size: 40px;
+justify-content: left;
+margin-left: 100px;
+}
+.about h2{
+  font-size: 40px;
+justify-content: left;
+margin-left: 100px;
+}
+.choose h2{
+  font-size: 30px;
+  justify-content: left;
+  margin-left: 70px;
+}
+.choose p{
+  font-size: 15px;
+  justify-content: left;
+  margin-left: 20px;
+
+ 
+}
+.point{
+  width:70%;
+}
+.loginimage {
+  background: none;
+  padding: 30px;
+  display: flex;
+justify-content: flex-end;
+  align-items: normal;
+  width: 426px;
+  margin-left: 20px;
+  
+}
+.content{
+margin-top: 160px;
+    margin-left: 10px;
+    text-align: start;
+   
+}
+.content h1{
+  font-size: 28px;
+}
+.button{
+margin-left: 10px;
+    margin-top: 40px;
+    font-size: 15px;
+   
+    text-align: start;
+}
+.footer-para{
+  justify-content: start; 
+  margin-left: 50px;
+}
+.footer-para p{
+  font-size: 15px;
+}
+.footer-para span{
+  font-size: 12px;
+}
+.footer-para h3{
+  font-size: 15px;
+}
+
+
+.aboutimg{
+  justify-content: flex-start;
+  height:200px;
+}
+.aboutimg h2{
+  font-size: 35px;
+  margin-left: 110px;
+}
+.Details img{
+  width:300px;
+  height:300px;
+}
+.Details h1{
+  font-size: 22px;
+}
+.Details h2{
+  font-size: 22px;
+}
+.Details h2 span{
+  font-size: 22px;
+}
+.Details p{
+  font-size: 22px;
+}
+.contactform{
+  background: none;
+}
+.contactcontain{
+  background: none;
+  width: 320px;
+  height: 600px;
+  margin-left: 30px;
+}
+.contactheading h2{
+  font-size: 25px;
+}
+.inputbox form label{
+  font-size: 20px;
+  margin-left: 20px;
+}
+.inputbox form input{
+  font-size: 15px;
+  padding: 4px 8px;
+  width: 290px;
+  margin-left: 15px;
+}
+.inputbox form textarea{
+  font-size: 15px;
+  padding: 4px 8px;
+  width: 290px;
+  margin-left: 15px;
+}
+.inputbox form button{
+  font-size: 18px;
+  padding: 6px 12px;
+  width: 290px;
+  margin-left: 15px;
+}
+.contact-details{
+  display: none;
+}
+.signup-contain{
+  width:500px;
+}
+.signup-image{
+  padding:0px;
+}
+.signup-details form p {
+  margin-top: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-start;
+ 
+}
+.signup-details form{
+  gap:10px;
+}
+.signup-heading{
+  justify-content: flex-start;
+  margin-left: 100px;
+}
+
+
+
+}
+@media (max-width:321px)
+{
+
+
+  .signup-contain{
+    width:600px;
+  }
+  .signup-image{
+    padding:0px;
+  }
+  .signup-details {
+    margin-left: 0px;
+  }
+  .signup-details form p {
+    margin-top: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+   
+  }
+  .signup-details form{
+    gap:6px;
+  }
+  .signup-details form input{
+    width:280px;
+  }
+  .signup-details form p{
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .signup-details form p a{
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .signup-details form  button{
+    width:280px;
+    padding:5px 10px;
+    font-size: 15px;
+  }
+  .signup-heading{
+    justify-content: flex-start;
+    margin-left: 70px;
+  }
+  .Contact .aboutimg h2{
+    font-size: 20px;
+    margin-left: 90px;
+  }
+  .Details{
+    margin-left: 10px;
+  }
+  .Details img{
+height:300px;
+width:300px;
+  }
+  .Details h1{
+font-size: 20px;
+  }
+  .Details h2{
+    font-size: 20px;
+      }
+      .Details h2 span{
+        font-size: 25px;
+          }
+          .Details p{
+            font-size: 20px;
+          }
+          .contact-details{
+            display: grid;
+          }
+  
+
+  header img{
+    width:50px;
+    height:50px;
+  }
+  nav ul a{
+    margin:0px;
+  }
+  .signup{
+    font-size: 9px;
+    padding: 3px;
+    background: red;
+    color:white;
+    
+    
+  }
+  .image img {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.box{
+  width:33%;
+}
+nav ul a{
+  margin:2px;
+}
+.services h2{
+font-size: 30px;
+justify-content: left;
+margin-left: 100px;
+}
+.about h2{
+  font-size: 30px;
+justify-content: left;
+margin-left: 100px;
+}
+.aboutimg{
+  justify-content: flex-start;
+  height:200px;
+}
+.aboutimg h2{
+  font-size: 30px;
+  margin-left: 100px;
+}
+.choose h2{
+  font-size: 25px;
+  justify-content: left;
+  margin-left: 65px;
+}
+.choose p{
+  font-size: 12px;
+  justify-content: left;
+  margin-left: 20px;
+
+ 
+}
+.point{
+  width:60%;
+}
+.loginimage {
+  background: none;
+  padding: 30px;
+  display: flex;
+justify-content: flex-end;
+  align-items: normal;
+  width: 426px;
+  margin-left: 0px;
+  
+}
+.loginform form p{
+  font-size: 15px;
+}
+.loginform form p a{
+  font-size: 15px;
+}
+.content{
+margin-top: 160px;
+    margin-left: 10px;
+    text-align: start;
+   
+}
+.content h1{
+  font-size: 28px;
+}
+.button{
+margin-left: 10px;
+    margin-top: 40px;
+    font-size: 15px;
+   
+    text-align: start;
+}
+.footer-para{
+  justify-content: start;
+  margin-left: 50px;
+}
+.footer-para p{
+  font-size: 15px;
+}
+.footer-para span{
+  font-size: 12px;
+}
+.footer-para h3{
+  font-size: 15px;
+}
+
+.point .img {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: -15px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+}
+.point .para h3{
+font-size: 20px;
+}
+
+.color {
+  margin-top: 100px;
+  width: 321px;
+  height: 400px;
+  background: red;
+}
+.color p{
+  font-size: 16px;
+}
+.cont p{
+  font-size: 15px;
+  margin-right: 100px;
+}
+.cont p span{
+  font-size: 18px;
+  
+}
+.aboutimg{
+  justify-content: flex-start;
+  height:200px;
+}
+.aboutimg h2{
+  font-size: 35px;
+  margin-left: 90px;
+}
+.Details img{
+  width:300px;
+  height:300px;
+}
+.Details h1{
+  font-size: 22px;
+}
+.Details h2{
+  font-size: 22px;
+}
+.Details h2 span{
+  font-size: 22px;
+}
+.Details p{
+  font-size: 22px;
+}
+.contactform{
+  background: none;
+}
+.contactcontain{
+  background: none;
+  width: 320px;
+  height: 600px;
+  margin-left: 0px;
+}
+.contactheading h2{
+  font-size: 25px;
+}
+.inputbox form label{
+  font-size: 20px;
+  margin-left: 20px;
+}
+.inputbox form input{
+  font-size: 15px;
+  padding: 4px 8px;
+  width: 290px;
+  margin-left: 15px;
+}
+.inputbox form textarea{
+  font-size: 15px;
+  padding: 4px 8px;
+  width: 290px;
+  margin-left: 15px;
+}
+.inputbox form button{
+  font-size: 18px;
+  padding: 6px 12px;
+  width: 290px;
+  margin-left: 15px;
+}
+.contact-details{
+  display: none;
+}
+
+}
+@media only screen and (max-width:1224px) and (min-width:769px){
+  html,body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+   
+  }
+  .contact-details .address{
+    margin-left: 3px;
+  }
+  .Contact .contactcontain {
+    width: 500px;
+    height: 550px;
+    background: whitesmoke;
+    margin-top: 60px;
+    box-shadow: 0 0 10px whitesmoke;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.inputbox form label {
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.inputbox form input {
+  width: 450px;
+  padding: 8px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.inputbox form textarea{
+  width:450px;
+  margin-left: 20px;
+}
+.inputbox form{
+  padding:10px;
+}
+.inputbox form button{
+  width:450px;
+  
+  padding:7px 14px;
+  margin-left: 20px;
+ 
+  text-align: center;
+}
+.contactheading h2{
+  font-size: 30px;
+}
+}
+
+ 
 
   
 
