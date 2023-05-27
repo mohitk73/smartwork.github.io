@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Assignment done </title>
 </head>
 <body>
 
         <header>
-            <img src="images/s.jpg" alt="logo">
-            <h1>SmartWork</h1>
-            <nav>
+            <div class="logo">
+                <img src="images/s (2).jpg" alt="logo">
+                <h1>SmartWork</h1>
+            </div>
+            <nav id="navbar">
             <ul>
                 <a href="index.html">Home</a>
                 <a href="aboutus.html">About Us</a>
@@ -23,6 +26,9 @@
                 <a class="signup" href="login.html">Login</a>
             </ul>
             </nav>
+            <div class="menu">
+                <i class='bx bx-menu' ></i>
+            </div>
         </header>
         <div class="register-form">
             <div class="register-image">
@@ -31,7 +37,7 @@
                         <h2>Apply Now</h2>
                     </div>
                     <div class="register-details">
-                        <form action="form.php" method="post">
+                        <form action="register.php" method="post">
                             <input type="text" name="name" required="required" placeholder="Name" name="name">&nbsp;
                             <input type="email" name="email" required="required" placeholder="Email Address" name="email"><br>
                             <input type="tel" name="name" required="required" placeholder="Mobile number" name="number">&nbsp;
@@ -46,8 +52,8 @@
                               <label for="file">Please attach the pdf or Topic of the work<br> So i can make for you</label>
                               <input type="file" name="file" required="required" placeholder="choose file" name="file"><br>
                               <label for="deadline">Deadline:</label>
-                              <input type="date" id="deadline" name="deadline" required min="2023-05-10" max="2023-06-30" name="date">
-                            <button>Register</button>
+                              <input type="date"  required min="2023-05-10" max="2023-06-30" name="date">
+                            <button type="submit">Register</button>
                             <p>you can see our&nbsp;<a href="price.html">PriceList</a></p>
                             <p>Don't have created account yet?&nbsp;<a href="signup.html"> Signup Now</a></p>
                            
@@ -58,5 +64,6 @@
                 </div>
               </div>
         </div>
+        <script src="script.js"></script>
 </body>
 </html>

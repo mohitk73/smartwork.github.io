@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .bgimage{
@@ -19,7 +20,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    position: fixed;
+   
     position:fixed;
     top: 0;
       left: 0;
@@ -29,7 +30,7 @@ header{
     padding-left:30px;
     box-shadow:0 0 10px black;
 }
-header img{
+/*header img{
   display: none;
   width:60px;
   height: 60px;
@@ -40,23 +41,58 @@ header h1{
     color:red;
     font-size: 40px;
     margin-left: 30px;
+}*/
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.logo img{
+  display: block;
+  width:80px;
+  height: 80px;
+  border-radius: 50%;
+  
+}
+.logo h1{
+    color:red;
+    font-size: 35px;
+    margin-left: 10px;
+    font-family: 'poppins',sans-serif;
+    
+}
+
 nav{
    
-   margin: 20px;
+   margin: 10px;
 }
 nav ul{
    margin-right: 20px;
-   display:block;
+   display:flex;
+   justify-content: center;
+    align-items: center;
 }
 nav ul a{
-margin: 9px;
+margin: 12px;
 color:#2555A6;
 text-decoration: none;
 font-size: 20px;
 }
 nav ul a:hover{
     color:red;
+}
+.apply{
+  background:whitesmoke;
+  color:#2555A6;
+  border:0.5px solid black;
+  padding:8px 16px;
+  border-radius: 9px;
+  font-weight: 500;
+}
+.apply:hover{
+  background: #2555A6;
+  color:white;
+  border:none;
 }
 .signup{
     padding: 10px 20px;
@@ -67,6 +103,11 @@ nav ul a:hover{
 .signup:hover{
     background: #2555A6;
         color:white;
+}
+.menu{
+  font-size: 40px;
+  color:#2555A6;
+  display:none;
 }
 
 
@@ -155,6 +196,7 @@ nav ul a:hover{
   height: 300px;
   border-radius: 10px;
   margin-left: 150px;
+  box-shadow: 12px 12px 7px rgba(0,0,0,0.7);
 }
 
  .cont {
@@ -196,8 +238,8 @@ nav ul a:hover{
         color:white;
 }
 
-#Services{
-    margin-top: 80px;
+.services{
+    margin-top: 100px;
    
 }
 .services h2{
@@ -423,6 +465,91 @@ nav ul a:hover{
     font-size: 20px;
     font-weight: 300;
   }
+
+
+  /*reviews*/
+  .reviews{
+    margin-top: 100px;
+   
+    
+  }
+  .reviews h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 0 0 4px black;
+    font-weight: 600;
+  }
+  .reviews p{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 6px;
+   
+  }
+  .reviews .review-slider{
+    
+    padding: 1rem;
+    margin-top: 50px;
+    
+    
+  }
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  align-items: center;
+  text-align: center;
+    margin-bottom: 50px;
+  }
+  .reviews .review-slider .review-box{
+    width: 30%;
+    height: 430px;
+    margin: 30px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    text-align: center;
+    box-shadow:0 0 10px black;
+  }
+  .reviews .review-slider .review-box img{
+    margin-top: 10px;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+  
+  }
+  .review-box:hover{
+    transform: translateY(-16px);
+    
+  }
+  .reviews .review-slider .review-box p{
+    margin-top: 10px;
+   font-size: 15px;
+   font-weight: 500;
+   padding:10px;
+   font-family: 'poppins',sans-serif;
+  }
+  .reviews .review-slider .review-box h3{
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 10px;
+    color:#2555A6
+  }
+  .reviews .review-slider .review-box h4{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+
+  .stars i{
+    color:yellow;
+    font-size: 25px;
+   text-shadow: 0 0 2px black;
+    margin-top: 10px;
+  }
+  
+
   
  
   .aboutimg{
@@ -432,6 +559,7 @@ nav ul a:hover{
    display: flex;
    justify-content: center;
   align-items: center;
+  background-size: cover;
 
   }
   .aboutimg h2{
@@ -903,6 +1031,16 @@ width:300px;
   display:flex;
   flex-wrap:wrap;
   }
+  .footer-row .footer-col img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+  }
+  .footer-row .footer-col h4{
+    color:red;
+    font-size: 35px;
+    text-shadow: 0 0 2px white;
+  }
   
   ul{
   list-style:none;
@@ -1018,6 +1156,7 @@ border-bottom: 2px solid  #e91e63 ;
     width: 450px;
     height: 500px;
     border-radius: 10px;
+    box-shadow: 12px 12px 7px rgba(0,0,0,0.7);
   }
   .Details h1{
     margin-top: 10px;
@@ -1185,7 +1324,7 @@ margin-left: 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 5px;
+      padding: 0 30px;
       position: fixed;
       
       top: 0;
@@ -1263,32 +1402,80 @@ main{
       background:  #2555A6;
       color:white;
   }
+  .logo{
+    margin-top: 0px;
+  }
 
-  header h1{
-    color:red;
+  .logo img{
+    width:70px;
+    height:70px;
+  }
+  .logo h1{
+    display: flex;
     font-size: 30px;
-    margin-left: 5px;
-}
-nav{
+    margin-left: 0px;
+  }
+  
+
+  
+#navbar{
    
-   margin: 5px;
+   margin: auto;
+   position: absolute;
+   top:70px;
+   left: 0;
+   right: 0;
+   width:100%;
+   background: white;
+  transition: 0.2s;
+  height:350px;
+  background-size: cover;
+  display: none;
 }
+
+
 nav ul{
-   margin-right:0px;
+
+  
+   display: grid;
+   width:fit-content;
+   margin:30px auto 0 auto;
+   text-align: center;
+   transition: 0.5s;
+  
+   
 }
 nav ul a{
 margin: 10px;
 color:#2555A6;
 text-decoration: none;
 font-size: 15px;
+justify-content: center;
+text-align: center;
+
 }
+
 .signup{
   padding: 4px 11px;
   background: red;
   color: white;
   border-radius: 9px;
-}
 
+}
+.apply{
+  padding: 4px 11px;
+}
+.menu{
+  display: block;
+  cursor: pointer;
+}
+.menu i {
+  margin-right: 20px;
+  font-size: 50px;
+  
+  color: #2555A6;
+  padding: 5px;
+}
 .about h2{
   font-size: 26px;
   font-weight: 600;
@@ -1314,6 +1501,7 @@ font-size: 15px;
   width: 400px;
   height: 300px;
   border-radius: 10px;
+  box-shadow: 12px 12px 7px rgba(0,0,0,0.7);
  
 }
 
@@ -1390,6 +1578,13 @@ font-size: 15px;
       
       @media (max-width: 768px) {
         
+          html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
         
         .box {
           width: 50%;
@@ -1404,11 +1599,15 @@ font-size: 15px;
         
         .box:nth-child(3n+1) {
           margin-right: 20px;
-          margin-left: 0;
+          margin-left: 20px;
         }
+        .box:nth-child(3n) {
+          margin-right: 20px;
+          margin-left: 20px;
+      }
         
         .box:nth-child(2n) {
-          margin-right: 0;
+          margin-right: 20px;
           margin-left: 20px;
         }
       }
@@ -1434,6 +1633,9 @@ font-size: 15px;
       .box .img:hover{
         background-color: #2555A6;
         color:white;
+      }
+      .point{
+        height:auto;
       }
       
       .para {
@@ -1501,6 +1703,16 @@ font-size: 15px;
       }
       .footer{
         width:800px;
+      }
+      .footer-row .footer-col img{
+        width:80px;
+        height:80px;
+        border-radius: 50%;
+      }
+      .footer-row .footer-col h4{
+        color:red;
+        font-size: 28px;
+        text-shadow: 0 0 1.7px white;
       }
       .aboutimg{
         width: 800px;
@@ -1773,6 +1985,57 @@ font-size: 15px;
           font-size: 9px;
          }
 
+         .reviews{
+          margin-top: 100px;
+        }
+        .reviews h2{
+          display: flex;
+          justify-content: flex-start;
+          margin-left: 279px;
+          font-size: 42px;
+          text-shadow: 0 0 5px black;
+          font-weight: 600;
+        }
+        .reviews p{
+          margin-left: 246px;
+    font-size: 21px;
+          margin-top: 6px;
+          display: flex;
+          justify-content: flex-start;
+         
+        }
+        .reviews-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          margin-top: 40px;
+        }
+        
+        .reviews .review-slider .review-box img {
+          margin-top: 10px;
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+        }
+        .reviews .review-slider .review-box{
+          width: 60%;
+          margin: 40px;
+          background-color: ghostwhite;
+          border-radius: 10px;
+          box-shadow: 0px 0px 3px black;
+          transition: transform 0.5s;
+          margin-left: 82px;
+        }
+        
+        .reviews .review-slider .review-box p{
+          margin-left: 5px;
+          font-size: 20px;
+        }
+        .reviews .wrapper{
+          display: flex;
+        }
+
   }
  @media( max-width: 426px){
   
@@ -1887,7 +2150,7 @@ main{
        }
        .loginform form input{
         padding:5px 10px;
-        width:300px;
+        width:270px;
         font-size: 12px;
        }
        .loginform form a{
@@ -1895,7 +2158,7 @@ main{
        }
        .loginform form button{
         padding:8px;
-        width:300px;
+        width:275px;
         font-size: 15px;
        }
        .loginform form p{
@@ -2063,34 +2326,35 @@ main{
     }
     .image img{
       margin-top: 20px;
-      width: 400px;
+      width: auto;
       height: 300px;
       border-radius: 10px;
       margin-left: 5px;
+      box-shadow: 12px 12px 7px rgba(0,0,0,0.7);
     }
     
      .cont {
        margin-top:10px;
        margin-right: 10px;
        margin-left: 5px;
-       background: ghostwhite;
+       background: white;
        width:400px;
     }
      .cont h5{
       text-align: left;
       color: black;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 600;
     }
     .cont h5 span{
         color:red;
-        font-size: 30px;
+        font-size: 28px;
     }
      .cont p{
       margin-top: 20px;
-      font-size: 20px;
-      margin-left: 3px;
-      margin-right: 40px;
+    font-size: 18px;
+    margin-left: 3px;
+    width: 350px;
     }
     .cont p span{
       color:red;
@@ -2104,7 +2368,7 @@ main{
       border-radius: 50px;
       text-decoration: none;
       font-size: 20px;
-      margin-left: 5px;
+      
         
     }
     .services{
@@ -2132,7 +2396,7 @@ main{
           
           .box {
             width: 40%;
-            margin: 20px;
+            margin: 25px;
             background-color: ghostwhite;
             border-radius: 10px;
             box-shadow: 0px 0px 3px black;
@@ -2151,12 +2415,16 @@ main{
             
             .box:nth-child(3n+1) {
               margin-right: 30px;
-              margin-left: 30px;
+              margin-left: 25px;
             }
+            .box:nth-child(2n) {
+              margin-right: 0;
+              margin-left: 25px;
+          }
             
             .box:nth-child(3n) {
               margin-right: 30px;
-              margin-left: 30px;
+              margin-left: 25px;
             }
           }
           
@@ -2226,14 +2494,14 @@ main{
             margin-top: 10px;
             margin-left: 10px;
            
-            font-size: 20px;
+            font-size: 18px;
             color:black;
             font-weight: 600;
           }
           .color p{
             
             
-            margin-left: 10px;
+            margin-left: 5px;
             color: white;
             font-size: 18px;
             margin-right: 20px;
@@ -2276,7 +2544,7 @@ main{
        
        .point {
         width: 350px;
-        height: 90px;
+        height: auto;
         margin: 30px;
         background-color: #f1f1f1;
         border-radius: 10px;
@@ -2316,37 +2584,70 @@ main{
         font-size: 20px;
         font-weight: 300;
       }
-
-      nav{
+      #navbar{
    
-        margin: 20px;
+        margin: auto;
+        position: absolute;
+        top:60px;
+        left: 0;
+        right: 0;
+        width:100%;
+        background: white;
+       transition: 0.2s;
+       height:350px;
+       background-size: cover;
+       display: none;
      }
+     
+     
      nav ul{
-        margin-right: 20px;
-        display:block;
+     
+       
+        display: grid;
+        width:fit-content;
+        margin:30px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+       
+        
      }
      nav ul a{
-     margin: 5px;
+     margin: 10px;
      color:#2555A6;
      text-decoration: none;
-     font-size: 9px;
+     font-size: 15px;
+     justify-content: center;
+     text-align: center;
+     
      }
-     nav ul a:hover{
-         color:red;
-     }
+     
      .signup{
-         padding: 5px 10px;
-         background: red;
-         color: white;
-         border-radius: 9px;
+       padding: 4px 11px;
+       background: red;
+       color: white;
+       border-radius: 9px;
+     
      }
+     .menu{
+       display: block;
+       cursor: pointer;
+     }
+     .menu i {
+      margin-right: 20px;
+      font-size: 45px;
+     
+      color: #2555A6;
+      padding: 5px;
+    }
+     
      
    
 
      header{
+      
       background-color: whitesmoke;
       display: flex;
-      justify-content: normal;
+      justify-content: space-between;
       align-items: center;
       padding: 5px;
       position: fixed;
@@ -2373,8 +2674,8 @@ main{
    }
   .register-contain{
     width:400px;
-    height:600px;
-    background: whitesmoke;
+    height:610px;
+    background: white;
     margin-top: 100px;
     border-radius: 7px;
   }
@@ -2390,7 +2691,7 @@ main{
   }
   .register-details{
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 30px;
   }
   .register-details form{
     
@@ -2461,6 +2762,7 @@ main{
   .Details img{
     width:300px;
     height:300px;
+    box-shadow: 12px 12px 7px rgba(0,0,0,0.7);
   }
   .Details h1{
     font-size: 22px;
@@ -2545,31 +2847,118 @@ main{
     border-radius: 10px;
     border-bottom: 2px solid black;
   }
+  .color a{
+    padding:5px 10px;
+    font-size: 15px;
+    margin-left: 20px;
+    
+  }
+ 
+  .logo img{
+    width:80px;
+    height:80px;
+  }
+  .logo h1{
+    display: flex;
+    font-size: 27px;
+    margin-left: 0px;
+  }
+  /*reviews*/
+  .reviews{
+    margin-top: 100px;
+  }
+  .reviews h2{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 110px;
+    font-size: 35px;
+    text-shadow: 0 0 5px black;
+    font-weight: 600;
+  }
+  .reviews p{
+    margin-left: 81px;
+      font-size: 18px;
+    margin-top: 6px;
+    display: flex;
+    justify-content: flex-start;
+   
+  }
+  .reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .reviews .review-slider .review-box img {
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  .reviews .review-slider .review-box{
+    width: 80%;
+    margin: 40px;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px black;
+    transition: transform 0.5s;
+  }
+  
+  .reviews .review-slider .review-box p{
+    margin-left: 5px;
+    font-size: 15px;
+  }
+  .reviews .wrapper{
+    display: grid;
+  }
   
 }
 @media( max-width: 376px){
+  .logo img{
+    width:70px;
+    height:70px;
+  }
+  .logo h1{
+    display: flex;
+    font-size: 25px;
+    margin-left: 0px;
+  }
+  .register-details {
+    margin-top: 20px;
+    margin-left: 2px;
+}
+ 
   .color p{
-    margin-right: 40px;
-   
     font-size: 18px;
+    width: 345px;
+  }
+  .color h2{
+    font-size: 16px;
   }
   .Contact .aboutimg h2{
     margin-left: 70px;
   }
   .image img {
     margin-top: 20px;
-    width: 350px;
+    width: 316px;
     height: 300px;
     border-radius: 10px;
     margin-left: 5px;
+    box-shadow: 12px 12px 7px rgba(0,0,0,0.7);
+}
+.cont p {
+  margin-top: 20px;
+  font-size: 18px;
+  margin-left: 3px;
+  width: 305px;
 }
 
 .box{
   width:40%;
 }
-nav ul a{
-  margin:2px;
-}
+
 .services h2{
 font-size: 40px;
 justify-content: left;
@@ -2578,17 +2967,17 @@ margin-left: 100px;
 .about h2{
   font-size: 40px;
 justify-content: left;
-margin-left: 100px;
+margin-left: 80px;
 }
 .choose h2{
   font-size: 30px;
   justify-content: left;
-  margin-left: 70px;
+  margin-left: 60px;
 }
 .choose p{
   font-size: 15px;
   justify-content: left;
-  margin-left: 20px;
+  margin-left: 10px;
 
  
 }
@@ -2647,6 +3036,7 @@ margin-left: 10px;
 .Details img{
   width:300px;
   height:300px;
+  box-shadow: 12px 12px 7px rgba(0,0,0,0.7);
 }
 .Details h1{
   font-size: 22px;
@@ -2766,6 +3156,129 @@ margin-left: 10px;
   border-radius: 10px;
   border-bottom: 2px solid black;
 }
+.box:nth-child(3n+1) {
+  margin-right: 30px;
+  margin-left: 20px;
+}
+.box:nth-child(3n) {
+  margin-right: 30px;
+  margin-left: 20px;
+}
+.color a{
+  padding:5px 10px;
+  font-size: 15px;
+  margin-left: 20px;
+  
+}
+header{
+  width:100%;
+}
+#navbar{
+   
+  margin: auto;
+  position: absolute;
+  top:60px;
+  left: 0;
+  right: 0;
+  width:100%;
+  background: white;
+ transition: 0.2s;
+ height:350px;
+ background-size: cover;
+ display: none;
+}
+
+
+nav ul{
+
+ 
+  display: grid;
+  width:fit-content;
+  margin:30px auto 0 auto;
+  text-align: center;
+  transition: 0.5s;
+ 
+  
+}
+nav ul a{
+margin: 10px;
+color:#2555A6;
+text-decoration: none;
+font-size: 15px;
+justify-content: center;
+text-align: center;
+
+}
+
+.signup{
+ padding: 4px 11px;
+ background: red;
+ color: white;
+ border-radius: 9px;
+
+}
+.menu{
+ display: block;
+ cursor: pointer;
+}
+.menu i {
+  margin-right: 20px;
+  font-size: 40px;
+  
+  color: #2555A6;
+  padding: 4px;
+}
+/*review*/
+.reviews{
+  margin-top: 100px;
+}
+.reviews h2{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 82px;
+  font-size: 33px;
+  text-shadow: 0 0 5px black;
+  font-weight: 600;
+}
+.reviews p{
+  margin-left: 45px;
+    font-size: 18px;
+  margin-top: 6px;
+  display: flex;
+  justify-content: flex-start;
+ 
+}
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.reviews .review-slider .review-box img {
+  margin-top: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.reviews .review-slider .review-box{
+  width: 72%;
+  margin: 30px;
+  background-color: ghostwhite;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px black;
+  transition: transform 0.5s;
+  height:450px;
+}
+
+.reviews .review-slider .review-box p{
+  margin-left: 5px;
+}
+.reviews .wrapper{
+  display: grid;
+}
+
 
 
 
@@ -2773,6 +3286,71 @@ margin-left: 10px;
 }
 @media (max-width:321px)
 {
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+  header{
+    width:100%;
+  }
+  #navbar{
+   
+    margin: auto;
+    position: absolute;
+    top:65px;
+    left: 0;
+    right: 0;
+    width:100%;
+    background: white;
+   transition: 0.2s;
+   height:350px;
+   background-size: cover;
+   display: none;
+ }
+ 
+ 
+ nav ul{
+ 
+   
+    display: grid;
+    width:fit-content;
+    margin:30px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+   
+    
+ }
+ nav ul a{
+ margin: 10px;
+ color:#2555A6;
+ text-decoration: none;
+ font-size: 15px;
+ justify-content: center;
+ text-align: center;
+ 
+ }
+ 
+ .signup{
+   padding: 5px 11px;
+   background: red;
+   color: white;
+   border-radius: 9px;
+ 
+ }
+ .menu{
+   display: block;
+   cursor: pointer;
+ }
+ .menu i {
+  margin-right: 20px;
+  font-size: 37px;
+ 
+  color: #2555A6;
+  padding: 3px;
+}
   .project-section h3{
     margin-left: 0px;
   }
@@ -2848,8 +3426,8 @@ margin-left: 10px;
     margin-left: 10px;
   }
   .Details img{
-height:300px;
-width:300px;
+        height:300px;
+        width:250px;
   }
   .Details h1{
 font-size: 20px;
@@ -2868,44 +3446,39 @@ font-size: 20px;
           }
   
 
-  header img{
-    width:50px;
-    height:50px;
+  .logo img{
+    width:60px;
+    height:60px;
   }
-  nav ul a{
-    margin:0px;
+  .logo h1{
+    display: flex;
+    font-size: 23px;
+    margin-left: 0px;
   }
-  .signup{
-    font-size: 9px;
-    padding: 3px;
-    background: red;
-    color:white;
-    
-    
-  }
+  
+  
   .image img {
     margin-top: 20px;
     width: 270px;
     height: 270px;
     border-radius: 10px;
-    margin-left: 15px;
+    box-shadow: 12px 12px 7px rgba(0,0,0,0.7);
 }
+  
 
 .box{
   width:33%;
 }
-nav ul a{
-  margin:2px;
-}
+
 .services h2{
 font-size: 30px;
 justify-content: left;
-margin-left: 100px;
+margin-left: 80px;
 }
 .about h2{
   font-size: 30px;
 justify-content: left;
-margin-left: 100px;
+margin-left: 80px;
 }
 .aboutimg{
   justify-content: flex-start;
@@ -3020,14 +3593,20 @@ font-size: 20px;
 }
 .color p{
   font-size: 16px;
+  padding: 10px;
+  width:280px;
 }
 .cont p{
   font-size: 14px;
-  margin-right: 130px;
+ width:250px;
+ margin-left: 0px;
 }
 .cont p span{
   font-size: 18px;
   
+}
+.color h2{
+  font-size: 18px;
 }
 .aboutimg{
   justify-content: flex-start;
@@ -3037,22 +3616,7 @@ font-size: 20px;
   font-size: 35px;
   margin-left: 90px;
 }
-.Details img{
-  width:300px;
-  height:300px;
-}
-.Details h1{
-  font-size: 22px;
-}
-.Details h2{
-  font-size: 22px;
-}
-.Details h2 span{
-  font-size: 22px;
-}
-.Details p{
-  font-size: 22px;
-}
+
 .contactform{
   background: none;
 }
@@ -3128,11 +3692,91 @@ font-size: 20px;
 .color a{
   padding:5px 10px;
   font-size: 15px;
+  margin-left: 10px;
   
+}
+.cont a{
+padding: 6px 12px;
+background: red;
+color: white;
+border-radius: 50px;
+text-decoration: none;
+font-size: 18px;
+margin-left: 10px;
+}
+.box:nth-child(3n+1) {
+  margin-right: 30px;
+  margin-left: 20px;
+}
+.box:nth-child(3n) {
+  margin-right: 30px;
+  margin-left: 20px;
+}
+/*reviews*/
+.reviews{
+  margin-top: 100px;
+}
+.reviews h2{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 70px;
+  font-size: 30px;
+  text-shadow: 0 0 5px black;
+  font-weight: 600;
+}
+.reviews p{
+  margin-left: 35px;
+  font-size: 17px;
+  margin-top: 6px;
+  display: flex;
+  justify-content: flex-start;
+ 
+}
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.reviews .review-slider .review-box img {
+  margin-top: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.reviews .review-slider .review-box{
+  /*width: 65%;*/
+  margin: 10px;
+  background-color: ghostwhite;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px black;
+  transition: transform 0.5s;
+  height: 400px;
+}
+
+.reviews .review-slider .review-box p{
+  margin-left: 5px;
+  font-size: 13px;
+}
+.reviews .review-slider .review-box h4{
+  font-size: 16px;
+}
+
+.reviews .wrapper{
+  display: grid;
+  width:351px;
 }
 
 }
 @media only screen and (max-width:1224px) and (min-width:769px){
+  .logo h1 {
+    color: red;
+    font-size: 28px;
+    margin-left: 0px;
+    font-family: 'poppins',sans-serif;
+}
   html,body{
     width:100%;
     height:100%;
@@ -3187,6 +3831,12 @@ font-size: 20px;
 }
 .color{
   height: 500px;
+}
+.reviews .review-slider .review-box img {
+  margin-top: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 }
