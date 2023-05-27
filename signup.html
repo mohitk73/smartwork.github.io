@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Assignment done </title>
 </head>
 <body>
 
         <header>
-            <img src="images/s.jpg" alt="logo">
-            <h1>SmartWork</h1>
-            <nav>
+            <div class="logo">
+                <img src="images/s (2).jpg" alt="logo">
+                <h1>SmartWork</h1>
+            </div>
+            <nav id="navbar">
             <ul>
                 <a href="index.html">Home</a>
                 <a href="aboutus.html">About Us</a>
@@ -23,6 +26,9 @@
                 <a class="signup" href="login.html">Login</a>
             </ul>
             </nav>
+            <div class="menu">
+                <i class='bx bx-menu' ></i>
+            </div>
         </header>
         <div class="signup-form">
             <div class="signup-image">
@@ -36,17 +42,17 @@
                             <input type="text" name="name" required="required" placeholder="Enter your name">
                             <label for="email">Email</label>
                             <input type="email" name="email" required="required" placeholder="Enter your email">
-                            <label for="name">Mobile number</label>
+                            <label for="number">Mobile number</label>
                             <input type="tel" name="name" required="required" placeholder="Enter your number">
-                            <label for="name">Branch</label>
+                            <label for="branch">Branch</label>
                             <input type="text" name="name" required="required" placeholder="Enter your branch">
-                            <label for="name">Semester</label>
+                            <label for="semester">Semester</label>
                             <input type="number" name="name" required="required" placeholder="Enter your semester">
-                            <label for="name">City</label>
+                            <label for="city">City</label>
                             <input type="text" name="name" required="required" placeholder="Enter your city">
-                            <label for="name">Password</label>
+                            <label for="password">Password</label>
                             <input type="password" name="name" required="required" placeholder="set your strong password">
-                            <label for="name">Re-Confirm password</label>
+                            <label for="password">Re-Confirm password</label>
                             <input type="password" name="name" required="required" placeholder="password">
                             <button>Create Account</button>
                             <p>if Already registered?&nbsp;<a href="login.html"> Login Now</a></p>
@@ -57,5 +63,6 @@
                 </div>
               </div>
         </div>
+        <script src="script.js"></script>
 </body>
 </html>

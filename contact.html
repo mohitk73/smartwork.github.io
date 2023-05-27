@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+ 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="images/s (2).jpg">
     <title>Assignment done </title>
 </head>
 <body>
     <header>
-        <img src="images/s.jpg" alt="logo">
-        <h1>SmartWork</h1>
-        <nav>
+        <div class="logo">
+            <img src="images/s (2).jpg" alt="logo">
+            <h1>SmartWork</h1>
+        </div>
+        <nav id="navbar">
             <ul>
                 <a href="index.html">Home</a>
                 <a href="aboutus.html">About Us</a>
@@ -22,6 +26,9 @@
                 <a class="signup" href="login.html">Login</a>
             </ul>
         </nav>
+        <div class="menu">
+            <i class='bx bx-menu' ></i>
+        </div>
     </header>
     <div class="Contact">
       <div class="aboutimg">
@@ -48,12 +55,12 @@
                         <label for="email">Email</label><br>
                         <input type="email" name="email" required="required" placeholder="Enter your Email"><br>
                         <br>
-                        <label for="name">Mobile Number</label><br>
+                        <label for="number">Mobile Number</label><br>
                         <input type="tel" name="number" required="required" placeholder="Enter your Number"><br>
                         <br>
-                        <label for="name">Mesaage</label><br>
+                        <label for="message">Mesaage</label><br>
                         <textarea required="required" placeholder="Write your Message"></textarea><br>
-                        <button>Send Enquiry</button>
+                        <button type="submit">Send Enquiry</button>
                     </form>
                 </div>
             </div>
@@ -82,6 +89,11 @@
     <footer class="footer">
       <div class="footer-contain">
   <div class="footer-row">
+    <div class="footer-col">
+        <img src="images/s (2).jpg" alt="footerlogo">
+        <h4>SmartWork</h4>
+        
+    </div>
   <div class="footer-col">
   <h3>SmartWork</h3>
   <ul>
@@ -148,5 +160,6 @@
   
   </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>  
